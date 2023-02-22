@@ -5,19 +5,18 @@
 #ifndef FACTORIO_RSCMAIN_H
 #define FACTORIO_RSCMAIN_H
 
-#include "../../util/inc/list.h"
-#include <string.h>
-#include <stdio.h>
+#include "rscinc.h"
 
 extern List * rscList;
 
 typedef struct {
-    const char * name;
+    char * name;
 } Rsc;
 
 extern int rscInit(char * filename);
-extern int rscNewResource(char * name);
+extern int rscNewResource(const char * name);
 extern int rscPrintResource(void * data);
+extern int rscPrintResources();
 extern int rscCmpResource(void * data1, void * data2, bool * r);
 
 #endif //FACTORIO_RSCMAIN_H

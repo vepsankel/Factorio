@@ -5,15 +5,8 @@
 #ifndef FACTORIO_RSCCMD_H
 #define FACTORIO_RSCCMD_H
 
-#include <string.h>
-#include <stdio.h>
-#include "../../util/inc/consts.h"
+#include "rscinc.h"
 
-#define BUFF_SIZE 256
-#define WORDS_IN_COMMAND 10
-
-extern char buff[BUFF_SIZE];
-extern const char * words[WORDS_IN_COMMAND];
-extern int rscCmdMain();
+extern int rscCmd(const char ** cliWords, unsigned int cliWordsInCommand);
 
 #endif //FACTORIO_RSCCMD_H

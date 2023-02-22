@@ -8,9 +8,7 @@
 #define BUFF_SIZE 256
 #define WORDS_IN_COMMAND 32
 
-#include <stdio.h>
-#include <string.h>
-#include "consts.h"
+#include "cliinc.h"
 
 extern unsigned int cliWordsInCommand;
 extern char cliBuff[BUFF_SIZE];
